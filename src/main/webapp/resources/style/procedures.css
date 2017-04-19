@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-04-14, 03:30:15
+    Author     : Ja
+*/
+
+body {
+    width: 400px;
+}
+.procedure, .parameters {
+    width: 100%;
+    float: left;
+}
+.format {
+    width: 100%;
+    float: none;
+}
+.paramDiv {
+    width: 100%;
+    float: left;
+}
+.label {
+    width: 30%;
+    float: left;
+}
+input[type="number"] {
+    width: 40%;
+    float: left;
+}

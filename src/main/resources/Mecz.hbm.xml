@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-04-16 17:46:36 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="mecze" name="com.ja.xmlgeneratorspring.entity.Mecz" optimistic-lock="version" table="mecze">
+    <id name="idMecz" type="int">
+      <column name="idMecz"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="przeciwnik" type="string">
+      <column length="11" name="przeciwnik"/>
+    </property>
+    <property name="bramkiStrzelone" type="java.lang.Integer">
+      <column name="bramkiStrzelone"/>
+    </property>
+    <property name="bramkiStracone" type="java.lang.Integer">
+      <column name="bramkiStracone"/>
+    </property>
+    <property name="strzalyWlasne" type="java.lang.Integer">
+      <column name="strzalyWlasne"/>
+    </property>
+    <property name="strzalyPrzeciwnika" type="java.lang.Integer">
+      <column name="strzalyPrzeciwnika"/>
+    </property>
+    <property name="posiadanieWlasne" type="java.lang.Integer">
+      <column name="posiadanieWlasne"/>
+    </property>
+    <property name="posiadaniePrzeciwnika" type="java.lang.Integer">
+      <column name="posiadaniePrzeciwnika"/>
+    </property>
+    <property name="zolteWlasne" type="java.lang.Integer">
+      <column name="zolteWlasne"/>
+    </property>
+    <property name="zoltePrzeciwnika" type="java.lang.Integer">
+      <column name="zoltePrzeciwnika"/>
+    </property>
+    <property name="czerwoneWlasne" type="java.lang.Integer">
+      <column name="czerwoneWlasne"/>
+    </property>
+    <property name="czerwonePrzeciwnika" type="java.lang.Integer">
+      <column name="czerwonePrzeciwnika"/>
+    </property>
+    <property name="data" type="date">
+      <column length="10" name="data"/>
+    </property>
+    <property name="przebiegnietyDystans" type="big_decimal">
+      <column name="przebiegnietyDystans" precision="5"/>
+    </property>
+    <property name="iloscKibicow" type="java.lang.Integer">
+      <column name="iloscKibicow"/>
+    </property>
+  </class>
+</hibernate-mapping>
