@@ -6,7 +6,6 @@
 package com.ja.xmlgeneratorspring.dao;
 
 import com.ja.xmlgeneratorspring.entity.Ban;
-import com.ja.xmlgeneratorspring.entity.Log;
 import java.util.List;
 import javax.transaction.Transactional;
 import org.hibernate.Query;

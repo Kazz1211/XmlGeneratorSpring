@@ -25,15 +25,6 @@
 <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
     <property name="sessionFactory" ref="sessionFactory" />
 </bean>
-<bean id="banDao" class="com.ja.xmlgeneratorspring.dao.BanDAO">
-    <property name="sessionFactory" ref="sessionFactory" />
-</bean>
-<bean id="logDao" class="com.ja.xmlgeneratorspring.dao.LogDAO">
-    <property name="sessionFactory" ref="sessionFactory" />
-</bean>
-<bean id="meczDao" class="com.ja.xmlgeneratorspring.dao.MeczDAO">
-    <property name="sessionFactory" ref="sessionFactory" />
-</bean>
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
           p:location="/WEB-INF/jdbc.properties" />
